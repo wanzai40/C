@@ -14,4 +14,5 @@ int main(){
     
     printf("一共有%d个字符",i);
     return 0;
+
 }
