@@ -15,3 +15,8 @@ int main(){
 
     return 0;
 }
+数字取位
+int ge ,shi,bai;
+  ge  = i   %10;
+  shi = i/10%10;
+  bai = i/100%10;
