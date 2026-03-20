@@ -48,6 +48,8 @@ int main(){
 // 比较
 //   ==则返回0
 // 不==返回非0
+>0表示s1>s2，0表示相等，<0表示s1<s2
+
     int aaa = strcmp(str31,str32);
 
     printf("%d\n\n",aaa);
