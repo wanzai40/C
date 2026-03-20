@@ -11,9 +11,15 @@ int main(){
 
     *p = 200;       //用指针去存储 、 修改
 
+arr[i]  ≡  *(arr + i)  ≡  p[i]  ≡  *(p + i)
 
+// C语言标准规定：
+arr[i] 等价于 *(arr + i)
 
-
+// 推导过程：
+arr[i]  = *(arr + i)    // 定义
+p[i]    = *(p + i)      // 同样的规则
+arr[i]  = p[i]          // 因为 arr 和 p 指向同一地址
 
     return 0;
 }
