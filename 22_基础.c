@@ -19,7 +19,14 @@ int main(){
     
     char b1[10]= "zxcvbnm";   // 字符数组，能存 10 个字符
 
+————————————————
+- 对于  int 、 float 、 char  等基本类型的变量/数组元素， scanf  必须用  &  取地址。
+​
+scanf("%d", &arr[i]); // ✅ 正确写法
 
+- 对于字符数组（字符串）， scanf  可以直接用数组名，不需要 & 。
+char str[10];
+scanf("%s", str); // ✅ 正确，数组名str本身就是首元素地址
 
 
     return 0;
