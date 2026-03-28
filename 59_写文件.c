@@ -1,4 +1,19 @@
 #include <stdio.h>
+————————————————————————————————————————
+fputs(字符数组, 往哪输出);
+往屏幕输出一行
+fputs(str, stdout);
+eg: 
+#include <stdio.h>
+int main() {
+    char s[30];
+    fgets(s, 30, stdin);   // 键盘读一行
+    fputs(s, stdout);      // 屏幕打印一行
+    return 0;
+}
+
+——————————————————————————————————————————————
+
 int main(){
 
     FILE* fp = fopen("E:\\cs.txt","w");       //写是w
