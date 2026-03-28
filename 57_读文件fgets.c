@@ -1,7 +1,21 @@
 #include <stdio.h>
+fgets
+ 
+ fgets(字符数组, 数组长度, stdin);
 
-int main(){
+char s[20];
+fgets(s, 20, stdin);     stdin  是什么？- 全称：standard input → 标准输入- 大白话：就是「键盘」
 
+- 最多读 长度-1 个字符，自动加  \0 
+​
+- 绝对不会越界，安全
+​
+- 会把回车  \n  一起读进去
+
+
+
+
+int main(){
     
                     // 打开文件，使用"r"模式表示读取文件
                     // 文件路径为E:\印度.txt
