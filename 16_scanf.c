@@ -18,3 +18,10 @@ int main()
     
     return 0;
 }
+
+scanf 要精确匹配：短f长lf
+ 
+ float  →  %f （4字节）
+ 
+ double  →  %lf （8字节）
+printf 统一用 %f（除了 long double）
