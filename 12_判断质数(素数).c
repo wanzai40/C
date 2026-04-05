@@ -13,22 +13,24 @@
 #include<stdio.h>
 void main()
 {
-    int i, n;
+    
     printf("3-100中所有素数如下：\n");
     // 外层循环：遍历3到100的每个数
-    for(n = 3; n <= 100; n++)
+    for(int n = 3; n <= 100; n++)
     {
         // 内层循环：用2到n-1的数试除n
-        for(i = 2; i <= n - 1; i++)
+        int isPrime = 1; // 标记是否为素数，1表示是，0表示否
+        for(int i = 2; i <= n - 1; i++)
         {
             // 如果n能被i整除，说明n不是素数，跳出内层循环
             if(n % i == 0)
             {
+                isPrime = 0;
                 break;
             }
         }
         // 如果内层循环结束后i >= n，说明n是素数
-        if(i >= n)
+        if(isPrime = 1)
         {
             printf("%d\t", n);
         }
