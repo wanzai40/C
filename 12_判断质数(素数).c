@@ -30,7 +30,7 @@ void main()
             }
         }
         // 如果内层循环结束后i >= n，说明n是素数
-        if(isPrime = 1)
+        if(isPrime == 1)
         {
             printf("%d\t", n);
         }
